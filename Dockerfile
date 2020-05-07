@@ -7,7 +7,7 @@ ADD entrypoint.sh /usr/bin
 
 RUN sed -i 's#dl-cdn.alpinelinux.org#mirrors.aliyun.com#g' /etc/apk/repositories && \
     apk --update add wget gettext tar bash sqlite && \
-    apk cache clean && rm -rf /var/cache/apk/* && \
+    apk cache clean ; rm -rf /var/cache/apk/* && \
     cd /opt && ls -al && \
     wget https://github.com/smartloli/kafka-eagle-bin/archive/v${EAGLE_VERSION}.tar.gz && ls -alR && \
     tar zxvf v${EAGLE_VERSION}.tar.gz -C kafka-eagle --strip-components 1 && \
