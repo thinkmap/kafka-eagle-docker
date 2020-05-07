@@ -10,7 +10,7 @@ RUN sed -i 's#dl-cdn.alpinelinux.org#mirrors.aliyun.com#g' /etc/apk/repositories
     apk cache clean ; rm -rf /var/cache/apk/* && \
     mkdir /opt && cd /opt && \
     wget https://github.com/smartloli/kafka-eagle-bin/archive/v${EAGLE_VERSION}.tar.gz && ls -alR && \
-    tar zxvf v${EAGLE_VERSION}.tar.gz -C kafka-eagle --strip-components 1 && \
+    tar zxvf v${EAGLE_VERSION}.tar.gz -C kafka-eagle --strip-components 1 && ls -alR && \
     cd kafka-eagle;tar zxvf kafka-eagle-web-${EAGLE_VERSION}-bin.tar.gz --strip-components 1 && \
     chmod +x /opt/kafka-eagle/bin/ke.sh && \
     mkdir -p /hadoop/kafka-eagle/db
