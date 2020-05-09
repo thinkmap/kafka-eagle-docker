@@ -53,7 +53,6 @@
   kafka.eagle.metrics.charts=false
   kafka.eagle.metrics.retain=30
   
-  
   ######################################
   # kafka sql topic records max
   ######################################
