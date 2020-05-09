@@ -7,3 +7,4 @@ services:
       - "8048:8048"
     volumes:
       - ./system-config.properties:/opt/kafka-eagle/conf/system-config.properties
+      - ./db:/hadoop/kafka-eagle/db
