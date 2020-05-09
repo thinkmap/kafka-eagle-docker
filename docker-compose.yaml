@@ -1,0 +1,9 @@
+version: '2'
+services:
+  kafka-eagle:
+    container_name: kafka-eagle
+    image: buzhiyun/kafka-eagle
+    ports:
+      - "8048:8048"
+    volumes:
+      - ./system-config.properties:/opt/kafka-eagle/conf/system-config.properties

@@ -19,6 +19,6 @@ RUN sed -i 's#dl-cdn.alpinelinux.org#mirrors.aliyun.com#g' /etc/apk/repositories
 
 EXPOSE 8048 8080
 
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["entrypoint.sh"]
 
 WORKDIR /opt/kafka-eagle
