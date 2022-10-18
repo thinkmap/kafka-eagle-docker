@@ -150,5 +150,6 @@ efak.password=123456
 ### docker build
 ```
 docker build -t egistry.cn-shanghai.aliyuncs.com/c-things/kafka-eagle:v3.0.1 .
+
 docker push egistry.cn-shanghai.aliyuncs.com/c-things/kafka-eagle:v3.0.1
 ```
